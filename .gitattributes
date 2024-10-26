@@ -1,0 +1,20 @@
+# Ensure all text files use LF for line endings (UNIX-style)
+* text=auto eol=lf
+
+# Handle PHP files explicitly
+*.php text eol=lf
+
+# Ignore node_modules and vendor folders from line endings conversion
+node_modules/* -text
+vendor/* -text
+
+# Handle image files as binary
+*.jpg binary
+*.png binary
+*.gif binary
+*.ico binary
+
+# Handle archives and binaries correctly
+*.zip binary
+*.tar.gz binary
+*.exe binary
